@@ -4,8 +4,9 @@
     "dictionaries": ["jsdoc"]
   },
   "source": {
-    "include": ["lib", "README.md"],
-    "includePattern": ".+\\.(js|jsx)?$"
+    "include": ["packages", "README.md"],
+    "excludePattern": "node_modules",
+    "includePattern": ".+\\.(js)?$"
   },
   "plugins": [
     "plugins/markdown"
@@ -20,15 +21,15 @@
     "monospaceLinks": true
   },
   "opts": {
-    "template": "node_modules/docdash",
+    "template": "node_modules/@reconbot/jsdoc-theme",
     "encoding": "utf8",
     "private": true,
     "destination": "./docs/",
     "recurse": true,
     "_tutorials": "./examples"
   },
-  "docdash": {
-    "static": true,
-    "sort": true
+  "reconbot": {
+    "github": "https://github.com/node-serialport/node-serialport",
+    "project": "SerialPort"
   }
 }
